@@ -1,0 +1,23 @@
+{
+  "name": "recipe-manager",
+  "version": "1.0.0",
+  "description": "This is a recipe manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curiosdevcookie/recipe-manager.git"
+  },
+  "keywords": [
+    "recipe",
+    "manager"
+  ],
+  "author": "AE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curiosdevcookie/recipe-manager/issues"
+  },
+  "homepage": "https://github.com/curiosdevcookie/recipe-manager#readme"
+}
