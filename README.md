@@ -13,19 +13,24 @@ Tuck in or bon Appètit!
 
 ### MacOS
 
-```bash
+```zsh
 brew install node
 ```
 
 Afterwards, clone the repository to your local machine:
 
-```bash
+```zsh
 git clone git@github.com:curiosdevcookie/recipe-manager.git
 ```
 
 And switch to the new repository using:
 
-```bash
+```zsh
 cd recipe-manager
 ```
 
+To start the recipe manager, run the following command:
+
+```zsh
+node .
+```
