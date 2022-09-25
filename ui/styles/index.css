@@ -62,6 +62,13 @@ nav {
 }
 
 /*Navigation*/
+nav {
+  font-size: var(--size-m);
+}
+
+nav ul {
+  list-style: none;
+}
 
 /*Headings*/
 h1 {
@@ -79,6 +86,7 @@ h2 {
 /*Text*/
 p {
   font-family: var(--font-main);
-  font-size: var(--size-s);
+  font-size: var(--size-m);
   color: var(--colour-text);
 }
+
