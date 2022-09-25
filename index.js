@@ -3,10 +3,10 @@ const http = require('http');
 const { readFile } = require('fs');
 
 const port = process.env.PORT || 3000;
-
+const filePath = './ui/index.html';
 
 const server = http.createServer((req, res) => {
-  readFile('./ui/index.html', (err, data) => {
+  readFile(filePath, (err, data) => {
     if (err) {
       res.statusCode = 500;
       res.end('Error');
