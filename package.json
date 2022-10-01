@@ -2,14 +2,15 @@
   "name": "recipe-manager",
   "version": "1.0.0",
   "description": "This is a recipe manager",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run ignore && npm run server",
     "ignore": "echo \"\" > .gitignore",
       "preignore": "touch .gitignore",
       "postignore": "echo \"//personal stuff\nlearning/\n\nnode_modules/\n.vscode\n.DS_Store\" >> .gitignore",
-    "server": "node index.js"
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
