@@ -1,9 +1,8 @@
-
-const http = require('http');
-const { readFile } = require('fs');
+import http from 'http';
+import { readFile } from 'fs';
 
 const port = process.env.PORT || 3000;
-const filePath = './ui/index.html';
+const filePath = './public/ui/index.html';
 
 const server = http.createServer((req, res) => {
   readFile(filePath, (err, data) => {
@@ -23,11 +22,3 @@ server.listen(port, () => {
   console.log(`Server is running on port ${port}.`);
 });
 
-const routes = {
-  'not found': function (req, res) {
-    res.statusCode = 404;
-    res.end('Not found');
-  },
-
-
-}
