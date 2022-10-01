@@ -4,7 +4,12 @@
   "description": "This is a recipe manager",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run ignore && npm run server",
+    "ignore": "echo \"\" > .gitignore",
+      "preignore": "touch .gitignore",
+      "postignore": "echo \"//personal stuff\nlearning/\n\nnode_modules/\n.vscode\n.DS_Store\" >> .gitignore",
+    "server": "node index.js"
   },
   "repository": {
     "type": "git",

@@ -32,6 +32,6 @@ cd recipe-manager
 To start the recipe manager, run the following command:
 
 ```zsh
-node .
+npm start
 ```
 Finally, navigate to ```localhost:3000``` in a browser of your choice.

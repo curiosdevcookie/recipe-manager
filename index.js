@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
     } else {
       res.statusCode = 200;
       res.setHeader('Content-Type', 'text/html');
+      res.setHeader('Access-Control-Allow-Origin', '*');
       res.end(data);
     }
   });
@@ -21,3 +22,12 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Server is running on port ${port}.`);
 });
+
+const routes = {
+  'not found': function (req, res) {
+    res.statusCode = 404;
+    res.end('Not found');
+  },
+
+
+}
