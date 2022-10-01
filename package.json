@@ -2,7 +2,7 @@
   "name": "recipe-manager",
   "version": "1.0.0",
   "description": "This is a recipe manager",
-  "main": "server.js",
+  "main": "./public/ui/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "ignore": "echo \"\" > .gitignore",
       "preignore": "touch .gitignore",
       "postignore": "echo \"//personal stuff\nlearning/\n\nnode_modules/\n.vscode\n.DS_Store\" >> .gitignore",
-    "server": "node server.js"
+    "server": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
