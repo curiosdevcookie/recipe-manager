@@ -34,4 +34,5 @@ To start the recipe manager, run the following command:
 ```zsh
 npm start
 ```
+
 Finally, navigate to ```localhost:3000``` in a browser of your choice.
