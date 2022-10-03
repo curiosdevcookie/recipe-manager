@@ -2,15 +2,15 @@
   "name": "recipe-manager",
   "version": "1.0.0",
   "description": "This is a recipe manager",
-  "main": "./public/ui/index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run ignore && npm run server",
     "ignore": "echo \"\" > .gitignore",
-      "preignore": "touch .gitignore",
-      "postignore": "echo \"//personal stuff\nlearning/\n\nnode_modules/\n.vscode\n.DS_Store\" >> .gitignore",
-    "server": "node ./server/server.js"
+    "preignore": "touch .gitignore",
+    "postignore": "echo \"//personal stuff\nlearning/\n\nnode_modules/\n.vscode\n.DS_Store\" >> .gitignore",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/curiosdevcookie/recipe-manager/issues"
   },
-  "homepage": "https://github.com/curiosdevcookie/recipe-manager#readme"
+  "homepage": "https://github.com/curiosdevcookie/recipe-manager#readme",
+  "dependencies": {
+    "mime-types": "^2.1.35"
+  }
 }
