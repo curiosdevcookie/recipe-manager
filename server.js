@@ -12,29 +12,26 @@ const __dirname = path.dirname(__filename);
 const host = '127.0.0.1' || 'localhost';
 const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
-  // if (req.url.startsWith('/static')) {
-  //   return routes.static(req, res)
-  // }
+    if (req.url.startsWith('/static')) {
+    return routes.static(req, res)
+  }
 
   if (req.url === '/' || req.url === '/home') {
-    routes.home(req, res);
+    return routes.home(req, res);
   }
-  else if (req.url === '/ingredients') {
-    routes.ingredients(req, res);
+  if (req.url === '/ingredients') {
+    return routes.ingredients(req, res);
   }
-  else if (req.url === '/recipes') {
-    routes.recipes(req, res);
+  if (req.url === '/recipes') {
+    return routes.recipes(req, res);
   }
-  else if (req.url === '/contact') {
-    routes.contact(req, res);
+  if (req.url === '/contact') {
+    return routes.contact(req, res);
   }
-  else {
-    res.end(routes.notFound(req, res));
-  }
+  return res.end(routes.notFound(req, res));
+
 });
 
 server.listen(port, host, () => {
-  console.log("listen")
-
   console.log(`Server is running on port ${port}.`);
 });
