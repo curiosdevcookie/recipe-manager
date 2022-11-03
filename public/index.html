@@ -7,8 +7,8 @@
   <title>Recipe Landing 🧑🏻‍🍳</title>
 
   <link rel='favicon' href='../favicon.ico' type='image/x-icon'>
-  <link rel='stylesheet' href='index.css' type='text/css'>
-  <script src='index.js' type='module'></script>
+  <link rel='stylesheet' href='/static/index.css' type='text/css'>
+  <script src='/static/index.js' type='module'></script>
 </head>
 
 <body>
@@ -26,7 +26,9 @@
     <section>
           <h2>Ready to have some kitchen fun?</h2>
           <p>Click the button below to get started:</p>
-          <button type='button' id='goRecipes'>Take me to the recipes</button>
+          <form>
+            <input type='submit' formaction='/recipes' value='Take me to the recipes!'>
+          </form>
     </section>
   </main>
 
@@ -37,7 +39,7 @@
   <nav>
     <ul>
       <li><a href='#'>Home</a></li>
-      <li><a href='#'>Recipes</a></li>
+      <li><a href='/recipes'>Recipes</a></li>
       <li><a href='#'>Contact</a></li>
     </ul>
   </nav>
