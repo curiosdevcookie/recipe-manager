@@ -9,7 +9,7 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-const host = '127.0.0.1' || 'localhost';
+const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
     if (req.url.startsWith('/static')) {
